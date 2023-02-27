@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cv.c195.UpdateAppointmentController">
+   <children>
+      <TextField fx:id="updateId" disable="true" editable="false" layoutX="123.0" layoutY="63.0" />
+      <TextField fx:id="updateTitle" layoutX="123.0" layoutY="94.0" />
+      <TextField fx:id="updateDescription" layoutX="123.0" layoutY="125.0" />
+      <ComboBox fx:id="updateContact" layoutX="123.0" layoutY="187.0" prefWidth="150.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="37.0" layoutY="191.0" prefHeight="17.0" prefWidth="80.0" text="Contact" />
+      <Label alignment="CENTER_RIGHT" layoutX="11.0" layoutY="222.0" prefHeight="17.0" prefWidth="106.0" text="Type" />
+      <Label alignment="CENTER_RIGHT" layoutX="37.0" layoutY="160.0" prefHeight="17.0" prefWidth="80.0" text="Location" />
+      <Label alignment="CENTER_RIGHT" layoutX="37.0" layoutY="129.0" prefHeight="17.0" prefWidth="80.0" text="Description" />
+      <Label alignment="CENTER_RIGHT" layoutX="37.0" layoutY="98.0" prefHeight="17.0" prefWidth="80.0" text="Title" />
+      <Label alignment="CENTER_RIGHT" layoutX="37.0" layoutY="67.0" prefHeight="17.0" prefWidth="80.0" text="ID" />
+      <Button fx:id="updateAppointmentButton" layoutX="217.0" layoutY="279.0" mnemonicParsing="false" onAction="#updateAppointmentButtonPressed" prefWidth="135.0" text="Update Appointment" />
+      <Label alignment="CENTER" layoutX="150.0" layoutY="14.0" prefHeight="32.0" prefWidth="269.0" text="UPDATE APPOINTMENT">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="updateLocation" layoutX="123.0" layoutY="156.0" prefWidth="150.0" />
+      <TextField fx:id="updateType" layoutX="123.0" layoutY="218.0" />
+      <DatePicker fx:id="updateDate" layoutX="370.0" layoutY="63.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="284.0" layoutY="67.0" prefHeight="17.0" prefWidth="80.0" text="Date" />
+      <Label alignment="CENTER_RIGHT" layoutX="284.0" layoutY="98.0" prefHeight="17.0" prefWidth="80.0" text="Start Time" />
+      <Label alignment="CENTER_RIGHT" layoutX="284.0" layoutY="129.0" prefHeight="17.0" prefWidth="80.0" text="End Time" />
+      <TextField fx:id="updateCustomerId" layoutX="370.0" layoutY="156.0" />
+      <TextField fx:id="updateUserId" layoutX="370.0" layoutY="187.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="284.0" layoutY="191.0" prefHeight="17.0" prefWidth="80.0" text="User ID" />
+      <Label alignment="CENTER_RIGHT" layoutX="284.0" layoutY="160.0" prefHeight="17.0" prefWidth="80.0" text="Customer ID" />
+      <TextField fx:id="updateStartHour" layoutX="370.0" layoutY="94.0" prefHeight="25.0" prefWidth="41.0" />
+      <TextField fx:id="updateEndHour" layoutX="370.0" layoutY="125.0" prefHeight="25.0" prefWidth="41.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="412.0" layoutY="98.0" prefHeight="17.0" prefWidth="7.0" text=":" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="412.0" layoutY="129.0" prefHeight="17.0" prefWidth="7.0" text=":" />
+      <TextField fx:id="updateStartMinute" layoutX="420.0" layoutY="94.0" prefHeight="25.0" prefWidth="41.0" />
+      <TextField fx:id="updateEndMinute" layoutX="420.0" layoutY="125.0" prefHeight="25.0" prefWidth="41.0" />
+      <RadioButton fx:id="updateStartAM" layoutX="467.0" layoutY="98.0" mnemonicParsing="false" text="AM">
+         <toggleGroup>
+            <ToggleGroup fx:id="startAmPm" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="updateStartPM" layoutX="513.0" layoutY="98.0" mnemonicParsing="false" text="PM" toggleGroup="$startAmPm" />
+      <RadioButton fx:id="updateEndAM" layoutX="467.0" layoutY="129.0" mnemonicParsing="false" text="AM">
+         <toggleGroup>
+            <ToggleGroup fx:id="endAmPm" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="updateEndPM" layoutX="513.0" layoutY="129.0" mnemonicParsing="false" text="PM" toggleGroup="$endAmPm" />
+   </children>
+</Pane>

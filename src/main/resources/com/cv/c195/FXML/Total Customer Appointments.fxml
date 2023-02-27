@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cv.c195.CustomerAppointmentsReportController">
+   <children>
+      <BarChart fx:id="customerAppointmentsBarChart" layoutX="14.0" layoutY="18.0" legendVisible="false" prefHeight="435.0" prefWidth="714.0" title="Number of Times Each Customer Has Had an Appointment this Year">
+        <xAxis>
+          <CategoryAxis label="Customer" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Appointment" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</Pane>
