@@ -1,3 +1,0 @@
-//localhost:3306/client_schedule
-sqlUser
-Passw0rd!
